@@ -1,0 +1,40 @@
+h2 {
+padding: 35px;
+font-size: 50px;
+
+
+}
+
+#vypocet {
+font-size: 40px;
+margin-left: 250px;
+}
+
+button {
+    margin-top: 20px;
+        margin-left: 500px;
+    font-size: 25px !important;
+    
+    }
+    
+
+hr {
+   margin-left: -40px;
+   width: 460px;
+    border-top: 1px solid rgb(255, 0, 0);
+}
+
+
+#fForm {
+margin-top: 12px;
+    font-size: larger;
+margin-left: 360px !important;
+}
+
+
+
+
+#form {
+display: none;
+
+}

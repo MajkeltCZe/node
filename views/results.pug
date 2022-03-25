@@ -1,0 +1,24 @@
+html 
+    head 
+        title Výsledky hry
+        style
+            include css/style.css
+    body
+        h1 #{nadpis}
+        table 
+            thead 
+                tr 
+                    th uzivatel
+                    th součet
+                    th rozdíl
+                    th stav
+            tbody 
+                each pl in players 
+                    tr 
+                        td  #{pl.uzivatel}        
+                        td  #{pl.soucet}
+                        td  #{pl.rozdil}
+                        td  #{pl.stav}
+
+ 
+        
