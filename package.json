@@ -1,18 +1,25 @@
 {
-  "name": "dice",
+  "name": "node",
   "version": "1.0.0",
-  "description": "Simple game",
-  "main": "server.js",
+  "description": "counting-money",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ML",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MajkeltCZe/node.git"
+  },
+  "author": "studentIt2",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MajkeltCZe/node/issues"
+  },
+  "homepage": "https://github.com/MajkeltCZe/node#readme",
   "dependencies": {
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.20.0",
     "csvtojson": "^2.0.10",
     "express": "^4.17.3",
-    "nodemon": "^2.0.15",
     "pug": "^3.0.2"
   }
 }

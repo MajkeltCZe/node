@@ -8,17 +8,21 @@ html
         table 
             thead 
                 tr 
+                    th datum
                     th uzivatel
                     th součet
                     th rozdíl
                     th stav
+                   
             tbody 
-                each pl in players 
+                each us in users
                     tr 
-                        td  #{pl.uzivatel}        
-                        td  #{pl.soucet}
-                        td  #{pl.rozdil}
-                        td  #{pl.stav}
+                        td #{us.datum}
+                        td  #{us.uzivatel}        
+                        td  #{us.soucet}
+                        td  #{us.rozdil}
+                        td  #{us.stav}
+                        
 
  
         

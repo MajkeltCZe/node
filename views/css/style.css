@@ -1,3 +1,42 @@
 h1 {
-    color: green;
+  text-align: center;
+    color: rgb(21, 0, 209);
 }
+
+
+
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 30px;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+min-height: 150px;
+}
+
+ thead tr {
+    background-color: #003af8;
+    color: #ffffff;
+    text-align: left;
+}
+
+ th,
+ td {
+    padding: 12px 15px;
+}
+
+
+
+ tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+ tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+ tbody tr:last-of-type {
+    border-bottom: 2px solid #000000;
+}
+
+

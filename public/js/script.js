@@ -12,7 +12,7 @@ btn.addEventListener('click', () => {
  rozdile = x[12].value; 
 
 
-celkem.value = count;
+sum.value = count;
 rozdil.value = rozdile - count;
 form.style.display = "block";
 
