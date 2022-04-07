@@ -14,7 +14,8 @@ app.set("views", path.join(__dirname, "views"));
 
 app.post('/results', urlencodedParser, (req, res) => {
   let date =  new Date();
-    let str = `${date.toLocaleDateString()}, ${req.body.user},${req.body.sum}, ${req.body.rozdil},${req.body.state}\n`;
+  let user = (!req.body.user) ? "anonym" : req.body.user;
+  let str = `${date.toLocaleDateString()}, ${user},${req.body.sum}, ${req.body.rozdil},${req.body.state}\n`;
     fs.appendFile(path.join(__dirname, 'data/pocty.csv'), str, function (err) {
     if (err) {
     console.error(err);
@@ -31,7 +32,9 @@ app.get("/results", (req, res) => {
     csv().fromFile(path.join(__dirname,'data/pocty.csv'))
     .then(data => {
     console.log(data);
-    res.render('results.pug', {'users':data,'nadpis': 'Předchozí výpočty'});
+  
+
+   res.render('results.pug', {'users':data,'nadpis': 'Předchozí výpočty'});
     })
      .catch(err => {
     console.log(err);
