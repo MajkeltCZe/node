@@ -1,15 +1,21 @@
 html 
     head 
-        title Výsledky hry
+        title Předchozí výpočty
+        link(rel='stylesheet'
+href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
         style
             include css/style.css
+
+
     body
-        h1 #{nadpis}
-        table 
+      header.jumbotron.text-center.bg-blue.text-white
+        h1  #{nadpis}     
+      main.container
+        table.table.table-striped 
             thead 
                 tr 
                     th datum
-                    th uzivatel
+                    th uživatel
                     th součet
                     th rozdíl
                     th stav
@@ -22,7 +28,10 @@ html
                         td  #{us.soucet}
                         td  #{us.rozdil}
                         td  #{us.stav}
-                        
-
- 
+         
+        a.btn.btn-blue.mt-4.mb-4(href="/") Zpět na formulář              
+      footer.bg-blue.p-3.text-white.text-center
+        p &copy;2022 - IT2, Michaela Říčná  
+        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+        script(src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js')
         

@@ -24,7 +24,7 @@ app.post('/results', urlencodedParser, (req, res) => {
     });
     }
     });
-    res.redirect(301, '/');
+    res.redirect(301, '/results');
     });
     
 app.get("/results", (req, res) => {
@@ -39,18 +39,6 @@ app.get("/results", (req, res) => {
     });
     });
     
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(4000, () => {
 console.log('Server naslouchá na portu 4000');
 });

@@ -5,10 +5,6 @@ font-size: 50px;
 
 }
 
-#vypocet {
-font-size: 40px;
-margin-left: 250px;
-}
 
 button {
     margin-top: 20px;
@@ -17,10 +13,26 @@ button {
     
     }
     
+    .bg-blue {
+        background-color: #003af8;
+      
+      }
+     
+      .btn-blue {
+        background-color: #003af8;
+        color: #ffffff;
+      
+      }
+
+      .btn-blue:hover {
+        background-color: #003af8;
+        color: #d8d8d8 !important;
+      
+      }
 
 hr {
    margin-left: -40px;
-   width: 460px;
+   width: 1100px;
     border-top: 1px solid rgb(255, 0, 0);
 }
 
@@ -28,13 +40,13 @@ hr {
 #fForm {
 margin-top: 12px;
     font-size: larger;
-margin-left: 360px !important;
+
 }
-
-
 
 
 #form {
+    margin-top: 12px;
+    font-size: larger;
 display: none;
-
 }
+
