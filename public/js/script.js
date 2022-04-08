@@ -10,16 +10,11 @@ btn.addEventListener('click', () => {
     (x[6].value * 100) + (x[7].value * 200) + (x[8].value * 500) + (x[9].value * 1000) + (x[10].value * 2000) + (x[11].value * 5000);
 
  rozdile = x[12].value; 
-
-
 sum.value = count;
-rozdil.value = rozdile - count;
+rozdil.value = count - rozdile;
 form.style.display = "block";
-
-state.value =  (rozdile - count > 0) ? "V plusu" : "V mínusu";
-
-
-
+state.value =  (count - rozdile > 0) ? "V plusu" : "V mínusu";
+if (count - rozdile == 0)  state.value = "na nule";
 });
 
 

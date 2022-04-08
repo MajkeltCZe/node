@@ -6,11 +6,9 @@ const app = express();
 const csv = require('csvtojson');
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
-
 app.use(express.static('public'));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
-
 
 app.post('/results', urlencodedParser, (req, res) => {
   let date =  new Date();
@@ -29,11 +27,8 @@ app.post('/results', urlencodedParser, (req, res) => {
     });
     
 app.get("/results", (req, res) => {
-    csv().fromFile(path.join(__dirname,'data/pocty.csv'))
-    .then(data => {
+    csv().fromFile(path.join(__dirname,'data/pocty.csv')).then(data => {
     console.log(data);
-  
-
    res.render('results.pug', {'users':data,'nadpis': 'Předchozí výpočty'});
     })
      .catch(err => {
